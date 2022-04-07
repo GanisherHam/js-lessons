@@ -575,3 +575,17 @@
 // planesInline(2);
 // planesInline(5);
 // planesInline(15);
+
+
+
+function myLanguages(results) {
+    let arr = [];
+    for(let [i,key] of Object.entries(results)){
+        if(key >= 60){
+            arr.push(i);
+        }
+    }
+    return arr;
+}
+  
+  console.log(myLanguages({"Hindi" : 60, "Greek" : 71, "Dutch" : 93}));
